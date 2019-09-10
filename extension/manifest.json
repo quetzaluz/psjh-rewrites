@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "PSJH On Perim URL Rewrites",
+  "description": "An extension to facilitate recent JIRA/Confluence migration",
+  "version": "1.0",
+
+  "options_page": "options.html",
+
+  "permissions": [
+    "webNavigation"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
