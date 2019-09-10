@@ -9,7 +9,7 @@
       // perform confluence page redirect
       var matchingRegex = /^(https:\/\/)(provinnovate.atlassian.net\/wiki\/spaces\/([A-Z]+)\/pages\/\d+\/)(.+)$/;
       var matches = details.url.match(matchingRegex);
-      if (matches.length === 5) {
+      if (matches && matches.length === 5) {
         newUrl = 'https://confluence.dig.engineering/display/' + matches[3] + '/' + matches[4];
       }
     }
